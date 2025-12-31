@@ -3228,7 +3228,7 @@ body {
     display: flex;
     align-items: center;
     width: 100%;
-    justify-content: center;
+    max-width: 100%;
   }
   
   .mini-player-controls {
@@ -3237,22 +3237,32 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
   }
   
   .mini-control-btn {
     font-size: 1rem;
     padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .mini-play-btn {
     width: 40px;
     height: 40px;
     font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   #miniPrev,
   #miniNext {
     font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .mini-progress-bar {
@@ -3338,15 +3348,24 @@ body {
     width: 36px;
     height: 36px;
     font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .mini-control-btn {
     font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   #miniPrev,
   #miniNext {
     font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   #miniShuffle {
@@ -3354,10 +3373,15 @@ body {
     padding: 0.4rem;
     min-width: 44px;
     min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .mini-player-controls {
     gap: 0.75rem;
+    width: 100%;
+    justify-content: center;
   }
   
   .mini-player-right {
