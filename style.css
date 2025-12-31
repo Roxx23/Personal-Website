@@ -3160,34 +3160,73 @@ body {
 /* — Responsive Mini Player — */
 @media (max-width: 768px) {
   .mini-player {
-    height: 80px;
-    padding: 0 0.5rem;
-    bottom: 70px;
+    height: 70px;
+    padding: 0.5rem;
+    bottom: 0;
     left: 0;
+    flex-direction: row;
+    gap: 0.5rem;
   }
   
   .mini-player-left {
     min-width: auto;
+    max-width: 120px;
+    gap: 0.5rem;
   }
   
   .mini-player-art {
-    width: 48px;
-    height: 48px;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .mini-player-info {
+    max-width: 60px;
+  }
+  
+  .mini-player-title {
+    font-size: 0.75rem;
+    max-width: 60px;
+  }
+  
+  .mini-player-artist {
+    font-size: 0.65rem;
+    max-width: 60px;
+  }
+  
+  .mini-player-like {
+    display: none;
   }
   
   .mini-player-center {
     flex: 1;
+    gap: 0.25rem;
+  }
+  
+  .mini-player-controls {
+    gap: 0.5rem;
+  }
+  
+  .mini-control-btn {
+    font-size: 0.85rem;
+    padding: 0.25rem;
+  }
+  
+  .mini-play-btn {
+    width: 28px;
+    height: 28px;
+    font-size: 0.8rem;
   }
   
   .mini-control-btn:not(.mini-play-btn) {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
   
   #miniShuffle,
   #miniRepeat,
   #miniQueue,
   #miniDevices,
-  #miniFullscreen {
+  #miniFullscreen,
+  #miniHistory {
     display: none;
   }
   
@@ -3195,19 +3234,80 @@ body {
     display: none;
   }
   
+  .mini-player-progress-container {
+    gap: 0.5rem;
+  }
+  
+  .mini-progress-bar {
+    height: 3px;
+  }
+  
+  .mini-player-right {
+    min-width: auto;
+    gap: 0.5rem;
+  }
+  
   .content {
-    margin-bottom: 150px;
+    margin-bottom: 70px;
+  }
+  
+  .sidebar {
+    display: none;
   }
 }
 
 @media (max-width: 480px) {
-  .mini-player-info {
+  .mini-player {
+    height: 65px;
+    padding: 0.25rem 0.5rem;
+  }
+  
+  .mini-player-left {
     max-width: 100px;
+  }
+  
+  .mini-player-art {
+    width: 36px;
+    height: 36px;
+  }
+  
+  .mini-player-info {
+    max-width: 50px;
+  }
+  
+  .mini-player-title {
+    font-size: 0.7rem;
+    max-width: 50px;
+  }
+  
+  .mini-player-artist {
+    font-size: 0.6rem;
+    max-width: 50px;
   }
   
   .mini-time {
     display: none;
   }
+  
+  .mini-play-btn {
+    width: 26px;
+    height: 26px;
+    font-size: 0.75rem;
+  }
+  
+  .mini-control-btn {
+    font-size: 0.8rem;
+  }
+  
+  #miniPrev,
+  #miniNext {
+    font-size: 0.75rem;
+  }
+  
+  .content {
+    margin-bottom: 65px;
+  }
+}
   
   .toast-container {
     bottom: 160px;
