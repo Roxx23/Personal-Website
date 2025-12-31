@@ -1176,14 +1176,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const startAutoScroll = () => {
     // Smooth auto-scroll
     autoScrollInterval = setInterval(() => {
-      window.scrollBy({
-        top: 2, // Scroll 2px at a time
-        behavior: 'smooth'
-      });
+      // Use different scroll method for better mobile compatibility
+      const scrollAmount = 2;
+      window.scrollBy(0, scrollAmount);
       
       // Stop at bottom
       if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
         clearInterval(autoScrollInterval);
+        autoScrollInterval = null;
       }
     }, 50); // Every 50ms
   };

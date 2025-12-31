@@ -3177,6 +3177,7 @@ body {
     max-width: none;
     gap: 0.75rem;
     justify-content: flex-start;
+    order: 0;
   }
   
   .mini-player-art {
@@ -3214,11 +3215,22 @@ body {
     flex: none;
     order: 1;
     gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .mini-player-progress-container {
+    order: 1;
+    gap: 0.5rem;
+    display: flex;
+    align-items: center;
   }
   
   .mini-player-controls {
     order: 2;
     gap: 1rem;
+    display: flex;
+    justify-content: center;
   }
   
   .mini-control-btn {
@@ -3237,11 +3249,6 @@ body {
     font-size: 1.1rem;
   }
   
-  .mini-player-progress-container {
-    order: 1;
-    gap: 0.5rem;
-  }
-  
   .mini-progress-bar {
     height: 4px;
   }
@@ -3254,10 +3261,10 @@ body {
   .mini-player-right {
     width: 100%;
     min-width: auto;
-    order: 2;
+    order: 3;
     justify-content: space-around;
     gap: 1rem;
-    padding-top: 0.25rem;
+    padding-top: 0.5rem;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
   }
   
