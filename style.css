@@ -3168,6 +3168,7 @@ body {
     gap: 0.5rem;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     background: linear-gradient(to bottom, #181818, #121212);
+    align-items: center;
   }
   
   /* Top row: Song info + Like */
@@ -3176,7 +3177,7 @@ body {
     min-width: auto;
     max-width: none;
     gap: 0.75rem;
-    justify-content: flex-start;
+    justify-content: center;
     order: 0;
   }
   
@@ -3189,6 +3190,7 @@ body {
   .mini-player-info {
     max-width: none;
     flex: 1;
+    text-align: center;
   }
   
   .mini-player-title {
@@ -3217,6 +3219,7 @@ body {
     gap: 0.5rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   
   .mini-player-progress-container {
@@ -3224,6 +3227,8 @@ body {
     gap: 0.5rem;
     display: flex;
     align-items: center;
+    width: 100%;
+    justify-content: center;
   }
   
   .mini-player-controls {
@@ -3231,6 +3236,7 @@ body {
     gap: 1rem;
     display: flex;
     justify-content: center;
+    align-items: center;
   }
   
   .mini-control-btn {
