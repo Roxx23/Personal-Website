@@ -744,16 +744,105 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   
   if (shuffleBtn) {
+    let isShuffled = false;
+    let originalOrder = [];
+    
     shuffleBtn.addEventListener('click', function() {
       this.classList.toggle('active');
-      if (this.classList.contains('active')) {
+      isShuffled = !isShuffled;
+      
+      if (isShuffled) {
         this.style.color = 'var(--accent)';
-        showNotification('Shuffle mode enabled');
+        shuffleContent();
+        showNotification('Shuffle mode enabled - Content shuffled! 🔀');
       } else {
         this.style.color = '';
-        showNotification('Shuffle mode disabled');
+        restoreContent();
+        showNotification('Shuffle mode disabled - Original order restored');
       }
     });
+    
+    function shuffleArray(array) {
+      const shuffled = [...array];
+      for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+      }
+      return shuffled;
+    }
+    
+    function shuffleContent() {
+      // Shuffle sections order
+      const mainContent = document.querySelector('.content');
+      const sections = Array.from(mainContent.querySelectorAll('.section'));
+      const heroSection = document.querySelector('.hero-playlist');
+      
+      // Store original order
+      originalOrder = sections.map(section => ({
+        element: section,
+        parent: section.parentNode,
+        nextSibling: section.nextSibling
+      }));
+      
+      // Shuffle sections
+      const shuffledSections = shuffleArray(sections);
+      
+      // Re-append in shuffled order (after hero section)
+      shuffledSections.forEach(section => {
+        mainContent.appendChild(section);
+      });
+      
+      // Shuffle projects
+      const projectCarousel = document.querySelector('#projects .carousel');
+      if (projectCarousel) {
+        const projectCards = Array.from(projectCarousel.querySelectorAll('.card-link'));
+        const shuffledProjects = shuffleArray(projectCards);
+        shuffledProjects.forEach(card => projectCarousel.appendChild(card));
+      }
+      
+      // Shuffle experience cards
+      const experienceCarousel = document.querySelector('#experience .carousel');
+      if (experienceCarousel) {
+        const experienceCards = Array.from(experienceCarousel.querySelectorAll('.card-link'));
+        const shuffledExperience = shuffleArray(experienceCards);
+        shuffledExperience.forEach(card => experienceCarousel.appendChild(card));
+      }
+      
+      // Shuffle skills
+      const skillsGrid = document.querySelector('.skills-grid');
+      if (skillsGrid) {
+        const skillCards = Array.from(skillsGrid.querySelectorAll('.skill-card'));
+        const shuffledSkills = shuffleArray(skillCards);
+        shuffledSkills.forEach(card => skillsGrid.appendChild(card));
+      }
+      
+      // Shuffle certifications
+      const certCarousel = document.querySelector('#certifications .carousel');
+      if (certCarousel) {
+        const certCards = Array.from(certCarousel.querySelectorAll('.card'));
+        const shuffledCerts = shuffleArray(certCards);
+        shuffledCerts.forEach(card => certCarousel.appendChild(card));
+      }
+      
+      // Smooth scroll to top
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    
+    function restoreContent() {
+      // Restore original sections order
+      originalOrder.forEach(({ element, parent, nextSibling }) => {
+        if (nextSibling && nextSibling.parentNode === parent) {
+          parent.insertBefore(element, nextSibling);
+        } else {
+          parent.appendChild(element);
+        }
+      });
+      
+      // Reload page to restore all original orders
+      setTimeout(() => {
+        location.reload();
+      }, 500);
+    }
   }
   
   if (repeatBtn) {
