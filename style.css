@@ -3266,14 +3266,13 @@ body {
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     gap: 1rem;
     padding-top: 0.5rem;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
   }
   
-  #miniShuffle,
-  #miniHistory {
+  #miniShuffle {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3285,7 +3284,8 @@ body {
   #miniRepeat,
   #miniQueue,
   #miniDevices,
-  #miniFullscreen {
+  #miniFullscreen,
+  #miniHistory {
     display: none;
   }
   
@@ -3343,8 +3343,7 @@ body {
     font-size: 1rem;
   }
   
-  #miniShuffle,
-  #miniHistory {
+  #miniShuffle {
     font-size: 1rem;
     padding: 0.4rem;
     min-width: 44px;
@@ -3369,12 +3368,29 @@ body {
   
   .toast-container {
     bottom: 160px;
-    left: 10px;
-    right: 10px;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    width: calc(100% - 40px);
+    max-width: 400px;
   }
   
   .toast {
     min-width: auto;
+    width: 100%;
+    padding: 0.75rem 1rem;
+  }
+  
+  .toast-icon {
+    font-size: 1.2rem;
+  }
+  
+  .toast-title {
+    font-size: 0.9rem;
+  }
+  
+  .toast-message {
+    font-size: 0.8rem;
   }
 }
 
