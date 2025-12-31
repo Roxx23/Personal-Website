@@ -3160,73 +3160,118 @@ body {
 /* — Responsive Mini Player — */
 @media (max-width: 768px) {
   .mini-player {
-    height: 70px;
-    padding: 0.5rem;
+    height: auto;
+    padding: 0.75rem 0.5rem 0.5rem;
     bottom: 0;
     left: 0;
-    flex-direction: row;
+    flex-direction: column;
     gap: 0.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    background: linear-gradient(to bottom, #181818, #121212);
   }
   
+  /* Top row: Song info + Like */
   .mini-player-left {
+    width: 100%;
     min-width: auto;
-    max-width: 120px;
-    gap: 0.5rem;
+    max-width: none;
+    gap: 0.75rem;
+    justify-content: flex-start;
   }
   
   .mini-player-art {
-    width: 40px;
-    height: 40px;
+    width: 48px;
+    height: 48px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   }
   
   .mini-player-info {
-    max-width: 60px;
+    max-width: none;
+    flex: 1;
   }
   
   .mini-player-title {
-    font-size: 0.75rem;
-    max-width: 60px;
+    font-size: 0.85rem;
+    max-width: none;
+    font-weight: 600;
   }
   
   .mini-player-artist {
-    font-size: 0.65rem;
-    max-width: 60px;
+    font-size: 0.75rem;
+    max-width: none;
+    margin-top: 2px;
   }
   
   .mini-player-like {
-    display: none;
+    display: flex;
+    font-size: 1.2rem;
+    padding: 0.5rem;
   }
   
+  /* Middle row: Progress bar */
   .mini-player-center {
-    flex: 1;
-    gap: 0.25rem;
-  }
-  
-  .mini-player-controls {
+    width: 100%;
+    flex: none;
+    order: 1;
     gap: 0.5rem;
   }
   
+  .mini-player-controls {
+    order: 2;
+    gap: 1rem;
+  }
+  
   .mini-control-btn {
-    font-size: 0.85rem;
-    padding: 0.25rem;
+    font-size: 1rem;
+    padding: 0.5rem;
   }
   
   .mini-play-btn {
-    width: 28px;
-    height: 28px;
-    font-size: 0.8rem;
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
   }
   
-  .mini-control-btn:not(.mini-play-btn) {
-    font-size: 0.85rem;
+  #miniPrev,
+  #miniNext {
+    font-size: 1.1rem;
+  }
+  
+  .mini-player-progress-container {
+    order: 1;
+    gap: 0.5rem;
+  }
+  
+  .mini-progress-bar {
+    height: 4px;
+  }
+  
+  .mini-time {
+    font-size: 0.7rem;
+  }
+  
+  /* Bottom row: Action buttons */
+  .mini-player-right {
+    width: 100%;
+    min-width: auto;
+    order: 2;
+    justify-content: space-around;
+    gap: 1rem;
+    padding-top: 0.25rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
   }
   
   #miniShuffle,
+  #miniHistory {
+    display: flex;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+  }
+  
   #miniRepeat,
   #miniQueue,
   #miniDevices,
-  #miniFullscreen,
-  #miniHistory {
+  #miniFullscreen {
     display: none;
   }
   
@@ -3234,21 +3279,8 @@ body {
     display: none;
   }
   
-  .mini-player-progress-container {
-    gap: 0.5rem;
-  }
-  
-  .mini-progress-bar {
-    height: 3px;
-  }
-  
-  .mini-player-right {
-    min-width: auto;
-    gap: 0.5rem;
-  }
-  
   .content {
-    margin-bottom: 70px;
+    margin-bottom: 140px;
   }
   
   .sidebar {
@@ -3258,54 +3290,60 @@ body {
 
 @media (max-width: 480px) {
   .mini-player {
-    height: 65px;
-    padding: 0.25rem 0.5rem;
+    padding: 0.5rem;
   }
   
   .mini-player-left {
-    max-width: 100px;
+    gap: 0.5rem;
   }
   
   .mini-player-art {
-    width: 36px;
-    height: 36px;
-  }
-  
-  .mini-player-info {
-    max-width: 50px;
+    width: 44px;
+    height: 44px;
   }
   
   .mini-player-title {
-    font-size: 0.7rem;
-    max-width: 50px;
+    font-size: 0.8rem;
   }
   
   .mini-player-artist {
-    font-size: 0.6rem;
-    max-width: 50px;
+    font-size: 0.7rem;
   }
   
-  .mini-time {
-    display: none;
+  .mini-player-like {
+    font-size: 1.1rem;
   }
   
   .mini-play-btn {
-    width: 26px;
-    height: 26px;
-    font-size: 0.75rem;
+    width: 36px;
+    height: 36px;
+    font-size: 0.9rem;
   }
   
   .mini-control-btn {
-    font-size: 0.8rem;
+    font-size: 0.95rem;
   }
   
   #miniPrev,
   #miniNext {
-    font-size: 0.75rem;
+    font-size: 1rem;
+  }
+  
+  #miniShuffle,
+  #miniHistory {
+    font-size: 1rem;
+  }
+  
+  .mini-player-controls {
+    gap: 0.75rem;
+  }
+  
+  .mini-player-right {
+    gap: 0.75rem;
   }
   
   .content {
-    margin-bottom: 65px;
+    margin-bottom: 130px;
   }
 }
   
