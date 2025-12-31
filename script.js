@@ -124,10 +124,10 @@ document.addEventListener('DOMContentLoaded', () => {
         
         const data = await response.json();
         
-        if (response.ok) {
+        if (response.ok && data.success) {
           submitBtn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
           submitBtn.style.background = 'linear-gradient(135deg, #1db954, #1ed760)';
-          showNotification('Message sent successfully! 📧');
+          showToast('Message Sent', 'Your message has been sent successfully! 📧', 'success');
           
           if (formResponse) {
             formResponse.innerHTML = '<p style="color: #1db954;">✓ Thank you! Your message has been sent.</p>';
@@ -151,10 +151,10 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error('Error:', error);
         submitBtn.innerHTML = '<i class="fas fa-exclamation-circle"></i> Try Again';
         submitBtn.style.background = 'linear-gradient(135deg, #e22134, #ff4444)';
-        showNotification('Failed to send message. Please try again.');
+        showToast('Failed to Send', 'Please check Web3Forms setup or try again later', 'error');
         
         if (formResponse) {
-          formResponse.innerHTML = '<p style="color: #e22134;">✗ Failed to send. Please try again.</p>';
+          formResponse.innerHTML = '<p style="color: #e22134;">✗ Failed to send. Please verify Web3Forms is configured correctly.</p>';
           formResponse.style.display = 'block';
         }
         
