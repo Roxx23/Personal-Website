@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Project One | Ayush Bora</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎵</text></svg>">
+</head>
+<body>
+  <!-- Experience Detail Page (reusing same layout for projects) -->
+  <div class="experience-page">
+    <!-- Header with Back Button -->
+    <header class="experience-header">
+      <a href="index.html#projects" class="back-btn">
+        <i class="fas fa-arrow-left"></i>
+        Back to Portfolio
+      </a>
+      <div class="experience-header-content">
+        <div class="experience-logo">
+          <img src="/logos/P1.png" alt="Project One">
+        </div>
+        <div class="experience-title-section">
+          <h1>CrediCheck</h1>
+          <p class="experience-role">Retrieval Augmented Generation</p>
+          <p class="experience-duration">
+            <i class="fas fa-calendar"></i>
+            2025
+          </p>
+          <p class="experience-location">
+            <i class="fas fa-link"></i>
+            <a href="https://github.com/Roxx23/Credickeck---Multilingual-Fake-News-Detection.git" target="_blank" style="color: var(--text-light); text-decoration: none;">GitHub Link</a>
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="experience-content">
+      <!-- Overview Section -->
+      <section class="experience-section">
+        <h2><i class="fas fa-info-circle"></i> Project Overview</h2>
+        <p>
+          CrediCheck is a multilingual fake-news detection and claim-verification system that combats misinformation using an evidence-driven approach rather than simple text classification. The system retrieves relevant documents using transformer-based semantic embeddings, performs fast similarity search via a vector database, and re-ranks evidence with cross-encoders to improve relevance. It then applies Natural Language Inference (NLI) to reason over the retrieved evidence and classify claims as supported, contradicted, or neutral, producing transparent and explainable verification results. Built as an end-to-end Retrieval-Augmented Generation (RAG) pipeline, CrediCheck supports multiple languages and offers both command-line and web-based interfaces for interactive fact-checking.
+        </p>
+      </section>
+
+      <!-- Key Features -->
+      <section class="experience-section">
+        <h2><i class="fas fa-star"></i> Key Features</h2>
+        <ul class="responsibilities-list">
+          <li>
+            <i class="fas fa-check-circle"></i>
+            Supports multilingual claim verification across multiple languages
+          </li>
+          <li>
+            <i class="fas fa-check-circle"></i>
+            Uses semantic embeddings to retrieve relevant evidence documents
+          </li>
+          <li>
+            <i class="fas fa-check-circle"></i>
+            Implements FAISS-based similarity search for fast large-scale retrieval
+          </li>
+          <li>
+            <i class="fas fa-check-circle"></i>
+            Applies Cross-Encoder re-ranking to improve evidence relevance
+          </li>
+          <li>
+            <i class="fas fa-check-circle"></i>
+            Performs stance classification (supports / contradicts / neutral) using NLI
+          </li>
+        </ul>
+      </section>
+
+      <!-- Technologies Used -->
+      <section class="experience-section">
+        <h2><i class="fas fa-code"></i> Technologies Used</h2>
+        <div class="tech-tags">
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">MPNet</span>
+          <span class="tech-tag">FAISS</span>
+          <span class="tech-tag">Flask</span>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Navigation -->
+    <footer class="experience-footer">
+      <a href="project5.html" class="footer-nav-btn">
+        <i class="fas fa-arrow-left"></i>
+        Previous Project
+      </a>
+      <a href="project2.html" class="footer-nav-btn">
+        Next Project
+        <i class="fas fa-arrow-right"></i>
+      </a>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      if (window.addToRecent) {
+        window.addToRecent(
+          'Project One',
+          'Project',
+          '/logos/credicheck.png',
+          'project1.html'
+        );
+      }
+    });
+  </script>
+</body>
+</html>

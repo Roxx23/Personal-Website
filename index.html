@@ -1,0 +1,771 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ayush Bora - Product Manager & Developer Portfolio</title>
+  <meta name="description" content="Spotify-inspired portfolio of Ayush Bora - Product Manager, Developer, and Marketing Expert at RightSol"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎵</text></svg>">
+
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="logo">
+      <!-- replace with your logo or initials -->
+      <img src="Formal_Photo.png" alt="Logo" class="profile-pic"/>
+      <h1>Ayush Bora</h1>
+      <p class="position">Product Marketing @ RightSol</p>
+    </div>
+    <nav class="menu">
+      <ul>
+        <li><a href="#skills"><i class="fas fa-cogs"></i><span>Skills</span></a></li>
+        <li><a href="#projects"><i class="fas fa-code"></i><span>Projects</span></a></li>
+        <li><a href="#experience"><i class="fas fa-briefcase"></i><span>Experience</span></a></li>
+        <li><a href="#about" class="active"><i class="fas fa-user"></i><span>About Me</span></a></li>
+        <li><a href="#education"><i class="fas fa-graduation-cap"></i><span>Education</span></a></li>
+        <li><a href="#certifications"><i class="fas fa-certificate"></i><span>Certifications</span></a></li>
+        <li><a href="#contact"><i class="fas fa-envelope"></i><span>Contact Me</span></a></li>
+      </ul>
+    </nav>
+    
+    <!-- Spotify-style Now Playing Bar in Sidebar -->
+    <div class="now-playing-sidebar">
+      <div class="now-playing-info">
+        <i class="fas fa-circle-notch fa-spin playing-icon"></i>
+        <div class="np-text">
+          <span class="np-title">Viewing Portfolio</span>
+          <span class="np-artist">Ayush Bora</span>
+        </div>
+      </div>
+      <div class="np-progress-mini">
+        <div class="np-progress-bar"></div>
+      </div>
+    </div>
+    
+    <div class="social">
+      <!-- replace # with your profile URLs -->
+      <a href="https://www.linkedin.com/in/ayushbora" class="social-link"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/Roxx23" class="social-link"><i class="fab fa-github"></i></a>
+      <a href="https://www.instagram.com/_ayushbora23?igsh=MTBueTlha3VtdzcxdQ%3D%3D&utm_source=qr" class="social-link"><i class="fab fa-instagram"></i></a>
+    </div>
+  </aside>
+  <main class="content">
+    <section class="hero-playlist">
+  <!-- Left “art” box -->
+  <div class="playlist-art">
+    <img src="Formal_Photo.png" alt="Ayush Bora" />
+  </div>
+
+  <!-- Right info panel -->
+  <div class="playlist-info">
+    <p class="type">Profile</p>
+    <h1>Ayush Bora</h1>
+    <p class="role">Product Manager &amp; Developer</p>
+    <a href="Resume.pdf" class="btn resume-btn">Download Resume</a>
+  </div>
+</section>
+
+
+      <!-- …inside <main class="content">, right after the hero section… -->
+  <!-- Skills Section -->
+<!-- Skills Section -->
+<section id="skills" class="section">
+  <h3 class="section-title">
+    Skills
+    <!-- Spotify-style Sort/Filter -->
+    <div class="section-controls">
+      <button class="filter-btn active" data-filter="all">
+        <i class="fas fa-list"></i> All
+      </button>
+      <button class="filter-btn" data-filter="programming">
+        <i class="fas fa-code"></i> Programming
+      </button>
+      <button class="filter-btn" data-filter="tools">
+        <i class="fas fa-wrench"></i> Tools
+      </button>
+      <button class="filter-btn" data-filter="marketing">
+        <i class="fas fa-bullhorn"></i> Marketing
+      </button>
+    </div>
+  </h3>
+  <div class="skills-grid">
+    <div class="skill-card" data-category="tools">
+      <img src="/logos/scikit_learn.png" alt="Scikit Learn" />
+      <span class="skill-name">Scikit Learn</span>
+    </div>
+    <div class="skill-card" data-category="tools">
+      <img src="/logos/tensorflow.png" alt="Tensorflow" />
+      <span class="skill-name">Tensorflow</span>
+    </div>
+    <div class="skill-card" data-category="tools">
+      <img src="/logos/pytorch.png" alt="Pytorch" />
+      <span class="skill-name">Pytorch</span>
+    </div>
+    <div class="skill-card" data-category="programming">
+      <img src="/logos/python.webp" alt="Python" />
+      <span class="skill-name">Python</span>
+    </div>
+    <div class="skill-card" data-category="programming">
+      <img src="/logos/mysql.png" alt="SQL / MySQL" />
+      <span class="skill-name">SQL / MySQL</span>
+    </div>
+    
+    <div class="skill-card" data-category="programming">
+      <img src="/logos/C++.jpg" alt="C++" />
+      <span class="skill-name">C++</span>
+    </div>
+    <div class="skill-card" data-category="programming">
+      <img src="/logos/C.jpeg" alt="C" />
+      <span class="skill-name">C</span>
+    </div>
+    <div class="skill-card" data-category="programming">
+      <img src="/logos/javascript.png" alt="Javascript" />
+      <span class="skill-name">Javascript</span>
+    </div>
+    <div class="skill-card" data-category="programming">
+      <img src="/logos/dart2.png" alt="Dart" />
+      <span class="skill-name">Dart</span>
+    </div>
+    <div class="skill-card" data-category="programming">
+      <img src="/logos/flutter.svg" alt="Flutter" />
+      <span class="skill-name">Flutter</span>
+    </div>
+    <div class="skill-card" data-category="tools">
+      <img src="/logos/firebase.png" alt="Firebase" />
+      <span class="skill-name">Firebase</span>
+    </div>
+    <div class="skill-card" data-category="tools">
+      <img src="/logos/tableau.png" alt="Tableau" />
+      <span class="skill-name">Tableau</span>
+    </div>
+    <div class="skill-card" data-category="tools">
+      <img src="/logos/powerBI.jpg" alt="PowerBI" />
+      <span class="skill-name">PowerBI</span>
+    </div>
+    <div class="skill-card" data-category="tools">
+      <img src="/logos/bigQuery.webp" alt="BigQuery" />
+      <span class="skill-name">BigQuery</span>
+    </div>
+    <div class="skill-card" data-category="tools">
+      <img src="/logos/RStudio.webp" alt="R Studio" />
+      <span class="skill-name">R Studio</span>
+    </div>
+    <div class="skill-card" data-category="marketing">
+      <img src="/logos/meta.png" alt="Performance Marketing" />
+      <span class="skill-name">Performance Marketing</span>
+    </div>
+    
+    
+  </div>
+</section>
+
+
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+  <h3 class="section-title">
+    Projects
+    <button class="shuffle-all-btn" title="Shuffle Projects">
+      <i class="fas fa-random"></i>
+    </button>
+  </h3>
+  <div class="carousel">
+    <a href="project1.html" class="card-link">
+        <div class="card">
+            <div class="card-image">
+                <img src="/logos/credicheck.png" alt="Project One Cover" />
+                <div class="overlay">
+                    <i class="fas fa-play"></i>
+                </div>
+            </div>
+            <p class="card-title">Project One</p>
+        </div>    
+    </a>
+
+    <a href="project2.html" class="card-link">
+        <div class="card">
+            <div class="card-image">
+                <img src="/logos/P2.png" alt="Project One Cover" />
+                <div class="overlay">
+                    <i class="fas fa-play"></i>
+                </div>
+            </div>
+            <p class="card-title">Project Two</p>
+        </div>    
+    </a>
+
+    <a href="project5.html" class="card-link">
+        <div class="card">
+            <div class="card-image">
+                <img src="/logos/water_potability.png" alt="Project One Cover" />
+                <div class="overlay">
+                    <i class="fas fa-play"></i>
+                </div>
+            </div>
+            <p class="card-title">Project Three</p>
+        </div>    
+    </a>
+    <a href="project4.html" class="card-link">
+        <div class="card">
+            <div class="card-image">
+                <img src="/logos/minigit.png" alt="Project One Cover" />
+                <div class="overlay">
+                    <i class="fas fa-play"></i>
+                </div>
+            </div>
+            <p class="card-title">Project Four</p>
+        </div>    
+    </a>
+    <a href="project3.html" class="card-link">
+        <div class="card">
+            <div class="card-image">
+                <img src="/logos/P3.png" alt="Project One Cover" />
+                <div class="overlay">
+                    <i class="fas fa-play"></i>
+                </div>
+            </div>
+            <p class="card-title">Project Five</p>
+        </div>    
+    </a>
+</section>
+<!-- Experience Section -->
+<section id="experience" class="section">
+  <h3 class="section-title">Experience</h3>
+  <div class="carousel">
+    <!-- boxbox -->
+    <a href="experience1.html" class="card-link">
+      <div class="card">
+        <div class="card-image">
+          <img src="/experience_logos/boxbxoLogo32.png" alt="Company One Logo" />
+          <div class="overlay">
+            <i class="fas fa-play"></i>
+          </div>
+        </div>
+        <p class="card-title">
+          boxbox<br>
+          <span class="card-subtitle">Co-Founder (2023–Present)</span>
+        </p>
+      </div>
+    </a>
+    <!-- Programming Hub -->
+    <a href="experience3.html" class="card-link">
+      <div class="card">
+        <div class="card-image">
+          <img src="/experience_logos/ProgammingHub2.png" alt="Company Three Logo" />
+          <div class="overlay">
+            <i class="fas fa-play"></i>
+          </div>
+        </div>
+        <p class="card-title">
+          Programming Hub<br>
+          <span class="card-subtitle">Intern</span>
+        </p>
+      </div>
+    </a>
+    <!-- TEDx -->
+    <a href="experience4.html" class="card-link">
+      <div class="card">
+        <div class="card-image">
+          <img src="/experience_logos/TEDxVITLogo.png" alt="Company Three Logo" />
+          <div class="overlay">
+            <i class="fas fa-play"></i>
+          </div>
+        </div>
+        <p class="card-title">
+          TEDxVITPune<br>
+          <span class="card-subtitle">Marketing & Branding Head(2024-2025)</span>
+        </p>
+      </div>
+    </a>
+    <!-- EPEC -->
+    <a href="experience2.html" class="card-link"> 
+      <div class="card">
+        <div class="card-image">
+          <img src="/experience_logos/EPEC2w.png" alt="Company Two Logo" />
+          <div class="overlay">
+            <i class="fas fa-play"></i>
+          </div>
+        </div>
+        <p class="card-title">
+          EPEC<br>
+          <span class="card-subtitle">Event Coordinator (2024-2025)</span>
+        </p>
+      </div>
+    </a>
+    <!-- IEEE -->
+    <a href="experience5.html" class="card-link"> 
+      <div class="card">
+        <div class="card-image">
+          <img src="/experience_logos/IEEEL.png" alt="Company Two Logo" />
+          <div class="overlay">
+            <i class="fas fa-play"></i>
+          </div>
+        </div>
+        <p class="card-title">
+          IEEE<br>
+          <span class="card-subtitle">Execom (2024-2025)</span>
+        </p>
+      </div>
+    </a>
+    <!-- Add more cards as needed -->
+  </div>
+</section>
+
+
+  <!-- …followed by your next section… -->
+
+
+    <!-- Next up: Carousel sections -->
+    
+    <!-- About Me / Education Section -->
+<section id="about" class="section">
+  <h3 class="section-title">About Me</h3>
+  <div class="about-content">
+    <p class="about-text">
+      I’m a developer who’s deeply passionate about machine learning, LLMs, and intelligent systems. I enjoy getting my hands dirty building ML models, experimenting with LLM workflows, and figuring out how to make them actually useful (and not just cool demos).<br>
+I also run BoxBox, a Formula 1 inspired brand, which means my life is split between debugging models and overanalyzing race strategies. If there’s an F1 weekend, productivity may dip. When I’m not coding, I’m usually listening to music, tweaking side projects, or thinking about how to add AI to things that probably didn’t need it, but now have it anyway.
+    </p>
+    
+    <!-- Quick Stats (Spotify-style) -->
+    <div class="quick-stats">
+      <div class="stat-item">
+        <div class="stat-number">10+</div>
+        <div class="stat-label">Projects Completed</div>
+      </div>
+      
+      <div class="stat-item">
+        <div class="stat-number">20+</div>
+        <div class="stat-label">Technical Skills</div>
+      </div>
+  </div>
+</section>
+
+<section id="education" class="section">
+  <h3 class="section-title">Education</h3>
+  <div class="education-cards">
+    <div class="edu-card">
+      <div class="edu-icon">
+        <i class="fas fa-university"></i>
+      </div>
+      <div class="edu-details">
+        <h4>Vishwakarma Institute of Technology, Pune</h4>
+        <p class="edu-degree">B.Tech in Computer Science</p>
+        <p class="edu-year">2023 - 2027</p>
+        <p class="edu-degree">CGPA: 8.82</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Certifications Section -->
+<section id="certifications" class="section">
+  <h3 class="section-title">Certifications</h3>
+  <div class="carousel">
+    <div class="card cert-link" data-cert="data_analytics_cert.jpg" data-date="June 2025" data-issuer="Google">
+        <div class="card-image cert-image">
+            <img src="logos/google.png" alt="Google" onerror="this.src='logos/P1.png'">
+            <div class="overlay">
+                <i class="fas fa-eye"></i>
+            </div>
+        </div>
+        <p class="card-title">Google Data Analytics Certified</p>
+        <p class="card-subtitle">Google</p>
+    </div>
+    
+    <div class="card cert-link" data-cert="machine_learning.jpg" data-date="July 2025" data-issuer="DeepLearning">
+        <div class="card-image cert-image">
+            <img src="logos/deeplearning.png" alt="DeepLearning" onerror="this.src='logos/P2.png'">
+            <div class="overlay">
+                <i class="fas fa-eye"></i>
+            </div>
+        </div>
+        <p class="card-title">Machine Learning</p>
+        <p class="card-subtitle">DeepLearning</p>
+    </div>
+    
+    <div class="card cert-link" data-cert="full_stack_software_developer.jpg" data-date="November 2025" data-issuer="IBM">
+        <div class="card-image cert-image">
+            <img src="logos/ibm.png" alt="IBM" onerror="this.src='logos/P3.png'">
+            <div class="overlay">
+                <i class="fas fa-eye"></i>
+            </div>
+        </div>
+        <p class="card-title">Full Stack Software Developer</p>
+        <p class="card-subtitle">IBM</p>
+    </div>
+    
+    <div class="card cert-link" data-cert="data_analytics_job_simulation.jpg" data-date="November 2025" data-issuer="Deloitte">
+        <div class="card-image cert-image">
+            <img src="logos/deloitte.png" alt="Deloitte" onerror="this.src='logos/P4.png'">
+            <div class="overlay">
+                <i class="fas fa-eye"></i>
+            </div>
+        </div>
+        <p class="card-title">Data Analytics Job Simulation</p>
+        <p class="card-subtitle">Deloitte</p>
+    </div>
+
+    <div class="card cert-link" data-cert="oracle_ai.jpg" data-date="August 2025" data-issuer="Oracle">
+        <div class="card-image cert-image">
+            <img src="logos/oracle.png" alt="Oracle" onerror="this.src='logos/P5.png'">
+            <div class="overlay">
+                <i class="fas fa-eye"></i>
+            </div>
+        </div>
+        <p class="card-title">Foundations Associate</p>
+        <p class="card-subtitle">Oracle</p>
+    </div>
+  </div>
+</section>
+
+<!-- Certificate Modal -->
+<div class="cert-modal" id="certModal">
+  <div class="cert-modal-overlay"></div>
+  <div class="cert-modal-content">
+    <button class="cert-modal-close" id="certModalClose">
+      <i class="fas fa-times"></i>
+    </button>
+    <div class="cert-modal-body">
+      <img src="" alt="Certificate" id="certImage">
+      <div class="cert-info">
+        <h2 id="certTitle">Certificate Title</h2>
+        <p id="certIssuer">Issued by Organization</p>
+        <p id="certDate">Date: January 2024</p>
+        <a href="#" class="cert-download-btn" id="certDownload" download>
+          <i class="fas fa-download"></i>
+          Download Certificate
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Me Section -->
+<section id="contact" class="section">
+  <h3 class="section-title">Get In Touch</h3>
+  <div class="contact-container">
+    <div class="contact-info">
+      <h2 class="contact-heading">Let's Connect</h2>
+      <p class="contact-subtext">Feel free to reach out for collaborations or just a friendly chat</p>
+      
+      <div class="contact-methods">
+        <a href="mailto:thisisayu0912@gmail.com" class="contact-method">
+          <div class="method-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="method-details">
+            <span class="method-label">Email</span>
+            <span class="method-value">thisisayu0912@gmail.com</span>
+          </div>
+        </a>
+        
+        <a href="https://www.linkedin.com/in/ayushbora" class="contact-method">
+          <div class="method-icon">
+            <i class="fab fa-linkedin"></i>
+          </div>
+          <div class="method-details">
+            <span class="method-label">LinkedIn</span>
+            <span class="method-value">linkedin.com/in/ayushbora</span>
+          </div>
+        </a>
+        
+        <a href="tel:+91 97027 60931" class="contact-method">
+          <div class="method-icon">
+            <i class="fas fa-phone"></i>
+          </div>
+          <div class="method-details">
+            <span class="method-label">Phone</span>
+            <span class="method-value">+91 97027 60931</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/Roxx23" class="contact-method">
+          <div class="method-icon">
+            <i class="fab fa-github"></i>
+          </div>
+          <div class="method-details">
+            <span class="method-label">GitHub</span>
+            <span class="method-value">github.com/Roxx23</span>
+          </div>
+        </a>
+      </div>
+    </div>
+    
+    <div class="contact-form-container">
+      <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+        <!-- Replace YOUR_ACCESS_KEY_HERE with your actual Web3Forms access key -->
+        <input type="hidden" name="access_key" value="3c883019-0623-40bc-a606-155f24be1e55">
+        <input type="hidden" name="subject" value="New Contact Form Submission from Portfolio">
+        <input type="hidden" name="from_name" value="Portfolio Contact Form">
+        
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" autocomplete="name" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="your.email@example.com" autocomplete="email" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Your message here..." autocomplete="off" required></textarea>
+        </div>
+        
+        <button type="submit" class="submit-btn">
+          <i class="fas fa-paper-plane"></i>
+          Send Message
+        </button>
+        
+        <div id="formResponse" class="form-response"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-left">
+      <h3>Ayush Bora</h3>
+      <p>Product Manager & Developer</p>
+    </div>
+    <div class="footer-center">
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="footer-right">
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/ayushbora/" class="footer-social-link"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Roxx23" class="footer-social-link"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/_ayushbora23?igsh=MTBueTlha3VtdzcxdQ%3D%3D&utm_source=qr" class="footer-social-link"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Ayush Bora. All rights reserved. • Made with 🎵 & Spotify vibes</p>
+  </div>
+</footer>
+
+    <!-- Content sections will go here -->
+  </main>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Spotify-style Volume Control -->
+  <div class="volume-control">
+    <button class="volume-btn" id="volumeBtn">
+      <i class="fas fa-volume-up"></i>
+    </button>
+    <div class="volume-slider-container">
+      <input type="range" min="0" max="100" value="70" class="volume-slider" id="volumeSlider">
+    </div>
+  </div>
+
+  <!-- Search Overlay (Spotify Cmd+K style) -->
+  <div class="search-overlay" id="searchOverlay">
+    <div class="search-container">
+      <div class="search-header">
+        <i class="fas fa-search"></i>
+        <input type="text" id="searchInput" placeholder="Search for sections, skills, projects..." autocomplete="off">
+        <button class="search-close" id="searchClose">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="search-results" id="searchResults">
+        <div class="search-section">
+          <h4>Quick Links</h4>
+          <a href="#about" class="search-result-item">
+            <i class="fas fa-user"></i> About Me
+          </a>
+          <a href="#skills" class="search-result-item">
+            <i class="fas fa-cogs"></i> Skills
+          </a>
+          <a href="#projects" class="search-result-item">
+            <i class="fas fa-code"></i> Projects
+          </a>
+          <a href="#contact" class="search-result-item">
+            <i class="fas fa-envelope"></i> Contact
+          </a>
+        </div>
+      </div>
+      <div class="search-footer">
+        <span><kbd>↑</kbd><kbd>↓</kbd> to navigate</span>
+        <span><kbd>Enter</kbd> to select</span>
+        <span><kbd>Esc</kbd> to close</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Keyboard Shortcut Indicator -->
+  <div class="keyboard-shortcut-hint" id="shortcutHint">
+    Press <kbd>Ctrl</kbd> + <kbd>K</kbd> to search
+  </div>
+
+  <!-- Spotify-style Mini Player / Now Playing Bar (Bottom) -->
+  <div class="mini-player" id="miniPlayer">
+    <div class="mini-player-left">
+      <div class="mini-player-art">
+        <img src="IMG_0277.JPG" alt="Profile" id="miniPlayerArt">
+      </div>
+      <div class="mini-player-info">
+        <span class="mini-player-title">Exploring Portfolio</span>
+        <span class="mini-player-artist">Ayush Bora</span>
+      </div>
+      <button class="mini-player-like" title="Add to favorites">
+        <i class="far fa-heart"></i>
+      </button>
+    </div>
+    
+    <div class="mini-player-center">
+      <div class="mini-player-controls">
+        <button class="mini-control-btn" id="miniShuffle" title="Shuffle">
+          <i class="fas fa-random"></i>
+        </button>
+        <button class="mini-control-btn" id="miniPrev" title="Previous">
+          <i class="fas fa-step-backward"></i>
+        </button>
+        <button class="mini-control-btn mini-play-btn" id="miniPlay" title="Play/Pause">
+          <i class="fas fa-play"></i>
+        </button>
+        <button class="mini-control-btn" id="miniNext" title="Next">
+          <i class="fas fa-step-forward"></i>
+        </button>
+        <button class="mini-control-btn" id="miniRepeat" title="Repeat">
+          <i class="fas fa-redo"></i>
+        </button>
+      </div>
+      <div class="mini-player-progress-container">
+        <span class="mini-time" id="miniCurrentTime">0:00</span>
+        <div class="mini-progress-bar">
+          <div class="mini-progress-fill" id="miniProgressFill"></div>
+          <div class="mini-progress-handle" id="miniProgressHandle"></div>
+        </div>
+        <span class="mini-time" id="miniTotalTime">3:45</span>
+      </div>
+    </div>
+    
+    <div class="mini-player-right">
+      <button class="mini-control-btn" id="miniQueue" title="Queue">
+        <i class="fas fa-list"></i>
+      </button>
+      <button class="mini-control-btn" id="miniHistory" title="Recently Viewed">
+        <i class="fas fa-history"></i>
+      </button>
+      <button class="mini-control-btn" id="miniDevices" title="Connect to a device">
+        <i class="fas fa-laptop"></i>
+      </button>
+      <div class="mini-volume-control">
+        <button class="mini-control-btn" id="miniVolumeBtn">
+          <i class="fas fa-volume-up"></i>
+        </button>
+        <input type="range" min="0" max="100" value="70" class="mini-volume-slider" id="miniVolumeSlider">
+      </div>
+      <button class="mini-control-btn" id="miniFullscreen" title="Full screen">
+        <i class="fas fa-expand"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Toast Notifications Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Queue Panel -->
+  <div class="queue-panel" id="queuePanel">
+    <div class="queue-header">
+      <h3><i class="fas fa-list"></i> Queue</h3>
+      <button class="close-queue" id="closeQueue">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <div class="queue-content">
+      <div class="queue-section">
+        <h4>Now Playing</h4>
+        <div class="queue-item active">
+          <span class="queue-number"><i class="fas fa-play playing-indicator"></i></span>
+          <div class="queue-info">
+            <div class="queue-title">Home</div>
+            <div class="queue-artist">Introduction</div>
+          </div>
+          <span class="queue-duration">0:30</span>
+        </div>
+      </div>
+      <div class="queue-section">
+        <h4>Next Up</h4>
+        <div class="queue-item" data-section="skills">
+          <span class="queue-number">1</span>
+          <div class="queue-info">
+            <div class="queue-title">Skills</div>
+            <div class="queue-artist">Technical Expertise</div>
+          </div>
+          <span class="queue-duration">0:45</span>
+        </div>
+        <div class="queue-item" data-section="projects">
+          <span class="queue-number">2</span>
+          <div class="queue-info">
+            <div class="queue-title">Projects</div>
+            <div class="queue-artist">Featured Work</div>
+          </div>
+          <span class="queue-duration">1:15</span>
+        </div>
+        <div class="queue-item" data-section="experience">
+          <span class="queue-number">3</span>
+          <div class="queue-info">
+            <div class="queue-title">Experience</div>
+            <div class="queue-artist">Career Journey</div>
+          </div>
+          <span class="queue-duration">1:00</span>
+        </div>
+        <div class="queue-item" data-section="about">
+          <span class="queue-number">4</span>
+          <div class="queue-info">
+            <div class="queue-title">About Me</div>
+            <div class="queue-artist">Personal Info</div>
+          </div>
+          <span class="queue-duration">0:30</span>
+        </div>
+        <div class="queue-item" data-section="certifications">
+          <span class="queue-number">5</span>
+          <div class="queue-info">
+            <div class="queue-title">Certifications</div>
+            <div class="queue-artist">Achievements</div>
+          </div>
+          <span class="queue-duration">0:45</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Recently Viewed Sidebar -->
+  <div class="recently-viewed-panel" id="recentlyViewedPanel">
+    <div class="recently-viewed-header">
+      <h3><i class="fas fa-history"></i> Recently Viewed</h3>
+      <button class="close-recently-viewed" id="closeRecentlyViewed">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <div class="recently-viewed-content" id="recentlyViewedContent">
+      <p class="empty-state">No recent items yet. Start exploring!</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

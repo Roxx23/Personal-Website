@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Project Five | Ayush Bora</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎵</text></svg>">
+</head>
+<body>
+  <!-- Experience Detail Page (reusing same layout for projects) -->
+  <div class="experience-page">
+    <!-- Header with Back Button -->
+    <header class="experience-header">
+      <a href="index.html#projects" class="back-btn">
+        <i class="fas fa-arrow-left"></i>
+        Back to Portfolio
+      </a>
+      <div class="experience-header-content">
+        <div class="experience-logo">
+          <img src="/logos/water_potability.png" alt="Project Three">
+        </div>
+        <div class="experience-title-section">
+          <h1>Water Potability Prediction</h1>
+          <p class="experience-role">Machine Learning</p>
+          <p class="experience-duration">
+            <i class="fas fa-calendar"></i>
+            2023
+          </p>
+          <p class="experience-location">
+            <i class="fas fa-link"></i>
+            <a href="https://github.com/Roxx23/Water-Potability-Prediction.git" target="_blank" style="color: var(--text-light); text-decoration: none;">GitHub Link</a>
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="experience-content">
+      <!-- Overview Section -->
+      <section class="experience-section">
+        <h2><i class="fas fa-info-circle"></i> Project Overview</h2>
+        <p>
+        This project focuses on building a machine learning–based classification system to predict whether water is safe for human consumption based on its chemical and physical properties. Using a real-world water quality dataset, the model analyzes features such as pH, hardness, dissolved solids, and organic carbon to learn patterns that distinguish potable from non-potable water. The goal of the project is to demonstrate how data preprocessing, feature handling, and supervised learning algorithms can be applied to solve a practical public-health problem using predictive analytics. </p>
+      </section>
+
+      <!-- Key Features -->
+      <section class="experience-section">
+        <h2><i class="fas fa-star"></i> Key Features</h2>
+        <ul class="responsibilities-list">
+          <li>
+            <i class="fas fa-check-circle"></i>
+            Implemented a full ML pipeline including data ingestion, preprocessing, training, and evaluation
+          </li>
+          <li>
+            <i class="fas fa-check-circle"></i>
+            Handled missing values using statistical imputation techniques
+          <li>
+            <i class="fas fa-check-circle"></i>
+            Applied feature scaling and normalization to improve model convergence
+          </li>
+          <li>
+            <i class="fas fa-check-circle"></i>
+            Trained supervised classification models for binary potability prediction
+          </li>
+          <li>
+            <i class="fas fa-check-circle"></i>
+            Evaluated models using confusion matrix, accuracy, precision, recall, and F1-score
+          </li>
+          <li>
+            <i class="fas fa-check-circle"></i>
+            Performed model comparison and selection to identify optimal predictive performance
+          </li>
+          <li>
+            <i class="fas fa-check-circle"></i>
+            Analyzed feature distributions and correlations to understand data behavior
+          </li>
+        </ul>
+      </section>
+      
+      <!-- Technologies Used -->
+      <section class="experience-section">
+        <h2><i class="fas fa-code"></i> Technologies Used</h2>
+        <div class="tech-tags">
+          <span class="tech-tag">Python</span>
+        </div>
+        <div class="tech-tags">
+          <span class="tech-tag">Pandas</span>
+        </div>
+        <div class="tech-tags">
+          <span class="tech-tag">Numpy</span>
+        </div>
+        <div class="tech-tags">
+          <span class="tech-tag">Scikit-learn</span>
+        </div>
+        <div class="tech-tags">
+          <span class="tech-tag">Scikit-learn</span>
+        </div>
+        <div class="tech-tags">
+          <span class="tech-tag">Matplotlib</span>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Navigation -->
+    <footer class="experience-footer">
+      <a href="project4.html" class="footer-nav-btn">
+        <i class="fas fa-arrow-left"></i>
+        Previous Project
+      </a>
+      <a href="project1.html" class="footer-nav-btn">
+        Next Project
+        <i class="fas fa-arrow-right"></i>
+      </a>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      if (window.addToRecent) {
+        window.addToRecent(
+          'Project Three',
+          'Project',
+          '/logos/water_potability.png',
+          'project5.html'
+        );
+      }
+    });
+  </script>
+</body>
+</html>
