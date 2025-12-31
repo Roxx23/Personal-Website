@@ -1399,6 +1399,16 @@ const sectionTitles = {
   'contact': 'Contact'
 };
 
+const sectionIcons = {
+  'about': 'fa-user',
+  'education': 'fa-graduation-cap',
+  'experience': 'fa-briefcase',
+  'skills': 'fa-cogs',
+  'projects': 'fa-code',
+  'certifications': 'fa-certificate',
+  'contact': 'fa-envelope'
+};
+
 window.addEventListener('scroll', () => {
   const sections = document.querySelectorAll('.section');
   const scrollPos = window.pageYOffset + 300;
@@ -1414,9 +1424,15 @@ window.addEventListener('scroll', () => {
         currentSection = newSection;
         
         // Update mini player title
-        const miniPlayerTitle = document.querySelector('.mini-player-title');
+        const miniPlayerTitle = document.getElementById('miniPlayerTitle');
         if (miniPlayerTitle) {
           miniPlayerTitle.textContent = `Viewing ${currentSection}`;
+        }
+        
+        // Update mini player icon
+        const miniPlayerIcon = document.getElementById('miniPlayerIcon');
+        if (miniPlayerIcon && sectionIcons[sectionId]) {
+          miniPlayerIcon.className = `fas ${sectionIcons[sectionId]}`;
         }
       }
     }
